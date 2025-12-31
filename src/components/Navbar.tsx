@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import LoginDialog from "@/components/landing/LoginDialog";
 import { Code2, Trophy, BookOpen, BarChart3, Flame, Menu } from "lucide-react";
 import { useState } from "react";
 
@@ -49,7 +50,7 @@ const Navbar = () => {
               <Flame className="w-4 h-4 text-accent" />
               <span className="text-sm font-semibold text-accent">7 day streak</span>
             </div>
-            <Button variant="outline" size="sm">Sign In</Button>
+            <LoginDialog />
             <Button variant="hero" size="sm">Get Started</Button>
           </div>
 
@@ -80,7 +81,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="flex gap-2 mt-4">
-                <Button variant="outline" className="flex-1">Sign In</Button>
+                <div className="flex-1"><LoginDialog /></div>
                 <Button variant="hero" className="flex-1">Get Started</Button>
               </div>
             </div>

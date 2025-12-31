@@ -118,9 +118,6 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground">
             © 2024 AlgoMaster. All rights reserved.
           </p>
-          <p className="text-sm text-muted-foreground">
-            Made with ❤️ for developers worldwide
-          </p>
         </div>
       </div>
     </footer>
